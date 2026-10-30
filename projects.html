@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects _Ömer</title>
+    <style>
+         :root {
+            --bg-color: #0b192c;
+            --grid-color: rgba(255, 255, 255, 0.03);
+            --line-color: #1e3e62;
+            --text-color: #ffffff;
+            --accent-color: #ff6500;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: monospace, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background-image: 
+                linear-gradient(var(--grid-color) 1px, transparent 1px),
+                 linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+         main {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 2px solid var(--line-color);
+            padding: 40px;
+            background: rgba(11, 25, 44, 0.9);
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+
+         h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+        }
+
+         p {
+            color: #9bb0c1;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+          .nav-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+            text-decoration: none;
+            border-bottom: 1px dashed var(--accent-color);
+        }
+
+         .project-card {
+            border: 1px solid var(--line-color);
+            padding: 20px;
+            margin-bottom: 30px;
+            background: rgba(8, 16, 29, 0.6);
+        }
+
+                .project-card h2 {
+            color: var(--accent-color);
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+
+        .project-image-container {
+            width: 100%;
+            margin-top: 15px;
+            border: 1px dashed var(--line-color);
+            padding: 10px;
+            box-sizing: border-box;
+            background: rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .project-image-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 15px;
+            border: 1px solid var(--line-color);
+        }
+
+        .title-block {
+            margin-top: 50px;
+            border: 1px solid var(--line-color);
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            font-size: 0.85rem;
+            background: #08101d;
+        }
+
+        .title-block div {
+            padding: 10px;
+            border-right: 1px solid var(--line-color);
+            border-top: 1px solid var(--line-color);
+        }
+          </style>
+</head>
+<body>
+
+    <main>
+        <a href="index.html" class="nav-link">&lt; Back to Index</a>
+        <p>Sheet 3: Projects</p>
+        <h1>Designed & Built</h1>
+
+         <div class="project-card">
+            <h2>01. Smart Bench Power Supply</h2>
+            <p>Custom 3D-printed adjustable power supply built with buck converters, potentiometers, and digital voltmeters.</p>
+            <div class="project-image-container">
+                <img src="images/Power_Supply_Images.jpeg" 
+                alt="Smart Bench Power Supply Photo 1">
+                <img src="images/Power_Supply_Images (2).jpeg" alt="Smart Bench Power Supply Photo 2">
+            </div>
+        </div>
+
+         <div class="project-card">
+            <h2>02. Arduino Vocabulary Game</h2>
+             <p>Interactive English vocabulary game built with Arduino Nano, OLED display, switch, LEDs, buttons, and a buzzer for audible alerts.</p>
+             <div class="project-image-container">
+                <img src="images/English_project.jpeg" alt="Vocabulary Game Photo 1">
+                <img src="images/English_project (2).jpeg" alt="Vocabulary Game Photo 2">
+            </div>
+        </div>
+
+         <div class="title-block">
+            <div><b>Title</b> Projects _Ömer</div>
+             <div><b>Drawn by</b> _Ömer</div>
+            <div><b>Rev</b> A / 2026</div>
+        </div>
+    </main>
+
+</body>
+</html>
