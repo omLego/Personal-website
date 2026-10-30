@@ -1,3 +1,14 @@
-# Personal Website
+# 🚀 Personal Website & Portfolio
 
-A personal portfolio website showcasing my engineering projects, skills, and contact channels. Built using HTML, CSS, and deployed with GitHub Pages.
+A modern, blueprint-styled personal portfolio website built to showcase my engineering projects, skills, and contact channels. 
+
+## 🛠️ Built With
+* **HTML5 & CSS3** - Core structure and custom styling.
+* **GitHub Pages** - Hosting and deployment.
+
+## 📂 Project Structure
+* `index.html` - Main landing page.
+* `about.html` - About me section.
+* `projects.html` - Portfolio of engineering projects.
+* `contact.html` - Contact channels.
+* `images/` - Image assets used across the site.
