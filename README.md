@@ -3,8 +3,8 @@
 A modern, blueprint-styled personal portfolio website built to showcase my engineering projects, skills, and contact channels. 
 
 ## Built With
-* **HTML5 & CSS3** - Core structure and custom styling.
-* **GitHub Pages** - Hosting and deployment.
+* **HTML5 & CSS3**
+* **GitHub Pages**
 
 ## Project Structure
 * `index.html` - Main landing page.
