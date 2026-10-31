@@ -1,114 +1,70 @@
 <!DOCTYPE html>
-<html lang="tr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>_Ömer: personal website</title>
-        <style>
-            :root {
---bg-color: #0b192c;
---grid-color: rgba(255, 255, 255, 0.03);
---line-color: #1e3e62;
---text-color: #ffffff;
---accent-color: #ff6500;
-            }
-
-body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: monospace, sans-serif;
-    margin: 0;
-    padding: 40px;
-    background-image:
-    linear-gradient(var(--grid-color) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
-    background-size: 20px 20px;
-}
-main{
-    max-width: 800px;
-    margin: 0 auto;
-    border: 2px solid var(--line-color);
-    padding: 40px;
-    background: rgba(11, 25, 44, 0.9);
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
-}
-h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            color: var(--accent-color);
-        }
-
-          p {
-            color: #9bb0c1;
-            line-height: 1.6;
-        }
-
-          ul {
-            list-style: none;
-            padding: 0;
-            margin-top: 30px;
-        }
-
-        li {
-            margin-bottom: 15px;
-            border-bottom: 1px dashed var(--line-color);
-            padding-bottom: 10px;
-        }
-
-        a {
-            text-decoration: none;
-            color: var(--text-color);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-          a:hover {
-            color: var(--accent-color);
-        }
-
-         a small {
-            color: #627284;
-        }
-
-         .title-block {
-            margin-top: 50px;
-            border: 1px solid var(--line-color);
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
-            font-size: 0.85rem;
-            background: #08101d;
-        }
-
-        .title-block div {
-            padding: 10px;
-            border-right: 1px solid var(--line-color);
-            border-top: 1px solid var(--line-color);
-        }
-
-         </style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ömer | Personal Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <main>
-        <p>Sheet 1: Index</p>
-        <h1>Hi! I'm _Ömer</h1>
-        <p>I design and build things. Hardware, 3D Prints, Circuits, Code, etc. A maker and engineering student always building and designing.</p>
+    <main class="container">
 
-<ul>
-            <li><a href="about.html"><b>About</b><small>Who i am</small></a></li>
-            <li><a href="projects.html">
-                <b>Projects</b><small>Things i have designed and built</small></a></li>
-                  <li><a href="power_supply.html"><b>Smart Bench Power Supply</b><small>Custom 3D-printed adjustable power supply</small></a></li>
-                    <li><a href="vocabulary_game.html"><b>Arduino Vocabulary Game</b><small>Interactive English learning vocabulary game</small></a></li>
-                     <li><a href="contact.html"><b>Contact</b><small>Get in touch with me</small></a></li>
-        </ul>
+        <header>
+            <p class="page-label">01 / HOME</p>
+            <h1>Hi, I'm Ömer.</h1>
+            <p class="intro">
+                I enjoy designing and building things.
+                My interests include electronics, hardware,
+                3D printing and engineering projects.
+            </p>
+        </header>
 
-         <div class="title-block">
-            <div><b>Title</b> _Omer: personal website</div>
-              <div><b>Drawn by</b> _Ömer</div>
-            <div><b>Rev</b> A / 2026</div>
-        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="about.html">
+                        <span>About</span>
+                        <span class="description">Who I am</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="projects.html">
+                        <span>Projects</span>
+                        <span class="description">Things I have built</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="power_supply.html">
+                        <span>Smart Bench Power Supply</span>
+                        <span class="description">Electronics project</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="vocabulary_game.html">
+                        <span>Arduino Vocabulary Game</span>
+                        <span class="description">Learning project</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        <span>Contact</span>
+                        <span class="description">Get in touch</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <footer>
+            <span>Ömer / Personal Website</span>
+            <span>Revision A — 2026</span>
+        </footer>
+
     </main>
 
 </body>
