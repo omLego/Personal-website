@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Bench Power Supply _Ömer</title>
+
+    <title>Smart Bench Power Supply - Ömer</title>
+
     <style>
-         :root {
+        :root {
             --bg-color: #0b192c;
             --grid-color: rgba(255, 255, 255, 0.03);
             --line-color: #1e3e62;
@@ -19,132 +21,145 @@
             font-family: monospace, sans-serif;
             margin: 0;
             padding: 40px;
-            background-image: 
+
+            background-image:
                 linear-gradient(var(--grid-color) 1px, transparent 1px),
                 linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+
             background-size: 20px 20px;
         }
 
         main {
             max-width: 800px;
-            margin: 0 auto;
-            border: 2px solid var(--line-color);
+            margin: auto;
             padding: 40px;
+            border: 2px solid var(--line-color);
             background: rgba(11, 25, 44, 0.9);
-            box-shadow: 0 0 20px rgba(0,0,0,0.5);
         }
 
-         h1 {
+        h1, h2 {
+            color: var(--accent-color);
+        }
+
+        h1 {
             font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: var(--accent-color);
         }
 
-         h2 {
-            color: var(--accent-color);
+        h2 {
             font-size: 1.3rem;
             margin-top: 30px;
             border-bottom: 1px dashed var(--line-color);
             padding-bottom: 5px;
         }
 
-        p {
+        p, ul {
             color: #9bb0c1;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-         ul {
-            color: #9bb0c1;
-            line-height: 1.8;
-            margin-bottom: 20px;
-            padding-left: 20px;
+            line-height: 1.7;
         }
 
         li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
 
-         .nav-link {
+        .nav-link {
             display: inline-block;
             margin-bottom: 20px;
             color: var(--accent-color);
             text-decoration: none;
-            border-bottom: 1px dashed var(--accent-color);
         }
 
-         .image-container {
+        .image-container {
             width: 100%;
             margin: 25px 0;
-            border: 1px dashed var(--line-color);
             padding: 10px;
+            border: 1px dashed var(--line-color);
             box-sizing: border-box;
-            background: rgba(0, 0, 0, 0.2);
             text-align: center;
         }
 
-         .image-container img {
+        .image-container img {
             max-width: 100%;
             height: auto;
-            display: block;
-            margin: 0 auto;
-            border: 1px solid var(--line-color);
         }
 
-         .image-note {
+        .image-note {
+            color: var(--accent-color);
             font-size: 0.8rem;
-            color: #ff6500;
             margin-top: 8px;
-            text-align: center;
         }
 
         .title-block {
-            margin-top: 50px;
-            border: 1px solid var(--line-color);
+            margin-top: 40px;
             display: grid;
             grid-template-columns: 2fr 1fr 1fr;
-            font-size: 0.85rem;
+            border: 1px solid var(--line-color);
             background: #08101d;
+            font-size: 0.85rem;
         }
 
-         .title-block div {
+        .title-block div {
             padding: 10px;
-            border-right: 1px solid var(--line-color);
-            border-top: 1px solid var(--line-color);
+            border: 1px solid var(--line-color);
         }
     </style>
 </head>
+
 <body>
 
-    <main>
-        <a href="index.html" class="nav-link">&lt; Back to Index</a>
-        <p>Sheet 4: Hardware / Project Detail</p>
-        <h1>Smart Bench Power Supply</h1>
+<main>
 
-        <p>A custom-built, high-precision laboratory bench power supply designed for electronics prototyping and component testing. Engineered from scratch combining custom 3D CAD modeling, buck converter power regulation, and integrated thermal management.</p>
+    <a href="index.html" class="nav-link">
+        &lt; Back to Index
+    </a>
 
-        <h2>Key Features & Technical Details</h2>
-        <ul>
-            <li><b>High-Precision Regulation:</b> Utilizes multi-turn potentiometers integrated with buck converter circuits to deliver fine, highly precise voltage and amperage adjustments with minimal output ripple.</li>
-            <li><b>Custom 3D-Printed Enclosure:</b> Designed in Fusion 360 to ensure zero-clearance component mounting, internal structural rigidity, and clean external panel geometry.</li>
-             <li><b>Effective Thermal Management:</b> Features dedicated internal airflow channels and active cooling heatsinks to maintain optimal operating temperatures under high load conditions.</li>
-            <li><b>Real-Diagnostics:</b> Dual digital LED panel meters provide continuous visual feedback for voltage and current output levels.</li>
-            </ul>
+    <p>Project Detail</p>
 
-             <h2>Internal Wiring & Assembly</h2>
-        <p>Below is an internal view showing the component layout, hand-soldered power rails, buck regulation module, and internal cable management inside the enclosure:</p>
+    <h1>Smart Bench Power Supply</h1>
+    
+    <p>
+        This project is a power supply. We can use it for tasks that require high current and voltage. It can output up to 19 volts and 6 amperes at the output.
+    </p>
 
-         <div class="image-container">
-            <img src="images/Power_Supply_Interior.jpeg" alt="Smart Bench Power Supply Interior Electronics Layout">
-            <div class="image-note">* Visual Note: Update the 'src' attribute with your interior image path (e.g., images/power_supply_interior.jpg)</div>
+    <h2>Components Used</h2>
+
+    <ul>
+        <li>Adjustable buck converter module for step-down voltage control.</li>
+        <li>Fine-adjustment potentiometers for precise voltage and current tuning.</li>
+        <li>Digital displays to monitor real-time output voltage and current.</li>
+        <li>Active cooling fan system to prevent overheating during high loads.</li>
+        <li>Custom 3D-printed enclosure designed to house all electronics safely.</li>
+    </ul>
+
+    <h2>How It Works</h2>
+
+    <p>
+        It steps down and regulates input power through the buck converter, allowing precise control via potentiometers while monitoring values on the digital screen.
+    </p>
+
+    <h2>Design and Assembly</h2>
+
+    <p>
+        The internal circuit and modules were carefully wired, mounted, and enclosed in a custom 3D-printed case with active fan cooling for bench use.
+    </p>
+
+    <div class="image-container">
+        <img
+            src="images/Power_Supply_Interior.jpeg"
+            alt="Inside view of the power supply"
+        >
+
+        <div class="image-note">
+            Internal view of the project
         </div>
+    </div>
 
-        <div class="title-block">
-            <div><b>Title</b> Project: Smart Bench Power Supply</div>
-            <div><b>Drawn by</b> _Ömer</div>
-            <div><b>Rev</b> A / 2026</div>
-        </div>
-    </main>
+    <div class="title-block">
+        <div><b>Project</b> Smart Bench Power Supply</div>
+        <div><b>Author</b> Ömer</div>
+        <div><b>Revision</b> A / 2026</div>
+    </div>
+
+</main>
 
 </body>
 </html>
