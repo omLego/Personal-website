@@ -1,99 +1,56 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>About _Ömer</title>
-    <style>
-        :root {
-            --bg-color: #0b192c;
-            --grid-color: rgba(255, 255, 255, 0.03);
-            --line-color: #1e3e62;
-            --text-color: #ffffff;
-            --accent-color: #ff6500;
-        }
-
-          body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            font-family: monospace, sans-serif;
-            margin: 0;
-             padding: 40px;
-            background-image: 
-                linear-gradient(var(--grid-color) 1px, transparent 1px),
-                  linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
-            background-size: 20px 20px;
-        }
-
-          main {
-            max-width: 800px;
-            margin: 0 auto;
-            border: 2px solid var(--line-color);
-            padding: 40px;
-            background: rgba(11, 25, 44, 0.9);
-            box-shadow: 0 0 20px rgba(0,0,0,0.5);
-        }
-
-            h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: var(--accent-color);
-        }
-
-         p {
-            color: #9bb0c1;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-         .details-box {
-            border-left: 2px solid var(--accent-color);
-            padding-left: 20px;
-            margin: 30px 0;
-        }
-
-         .nav-link {
-            display: inline-block;
-            margin-bottom: 20px;
-            color: var(--accent-color);
-            text-decoration: none;
-            border-bottom: 1px dashed var(--accent-color);
-        }
-
-         .title-block {
-            margin-top: 50px;
-            border: 1px solid var(--line-color);
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
-            font-size: 0.85rem;
-            background: #08101d;
-        }
-
-         .title-block div {
-            padding: 10px;
-            border-right: 1px solid var(--line-color);
-            border-top: 1px solid var(--line-color);
-        }
-         </style>
+    <title>About | Ömer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+<main class="container">
 
-     <main>
-        <a href="index.html" class="nav-link">&lt; Back to Index</a>
-        <p>Sheet 2: About Me</p>
-        <h1>Maker & Engineer</h1>
+    <header>
+        <a href="index.html" class="nav-link">&larr; Back to Index</a>
+        <p class="page-label">02 / ABOUT</p>
+        <h1>About Me</h1>
+    </header>
 
-         <div class="details-box">
-            <p>Hi, I am Ömer. I am a 17-year-old maker and engineering student. My passion lies in designing and building hardware, working with 3D prints, creating circuits, and writing code.</p>
-             <p>I thrive on turning ideas into functional physical projects like custom adjustable power supplies and interactive learning games.</p>
-              </div>
+    <section>
+        <h2>Introduction</h2>
+        <p class="intro">
+              Hello, I'm Ömer. I'm 17 years old and I'm interested in engineering, electronics, and technology. I enjoy turning ideas into projects.
+        </p>
+    </section>
 
-        <div class="title-block">
-            <div><b>Title</b> About _Ömer</div>
-            <div><b>Drawn by</b> _Ömer</div>
-            <div><b>Rev</b> A / 2026</div>
-        </div>
-          </main>
+    <section>
+        <h2>Technical Interests</h2>
+        <ul>
+            <li>Electronics and circuit design</li>
+            <li>3D printing and CAD modeling</li>
+            <li>Arduino and embedded systems</li>
+            <li>Hardware development</li>
+        </ul>
+    </section>
 
+    <section>
+        <h2>My Projects</h2>
+        <p class="intro">
+            I work on electronics, 3D printing, and engineering projects. I have built a smart power supply and an educational word game powered by Arduino.
+        </p>
+    </section>
+
+    <section>
+        <h2>My Approach</h2>
+        <p class="intro">
+            I enjoy conducting experiments, building projects from scratch, and teaching people.
+        </p>
+    </section>
+
+    <footer>
+        <span>Ömer / 2026</span>
+    </footer>
+
+</main>
 </body>
 </html>
