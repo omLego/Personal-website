@@ -1,4 +1,4 @@
-# Personal Website & Portfolio
+# Personal Website
 
 A modern, blueprint-styled personal portfolio website built to showcase my engineering projects, skills, and contact channels. 
 
