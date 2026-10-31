@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arduino Vocabulary Game _Ömer</title>
+
+    <title>Arduino Vocabulary Game - Ömer</title>
+
     <style>
         :root {
             --bg-color: #0b192c;
@@ -11,7 +13,7 @@
             --line-color: #1e3e62;
             --text-color: #ffffff;
             --accent-color: #ff6500;
-              }
+        }
 
         body {
             background-color: var(--bg-color);
@@ -19,53 +21,49 @@
             font-family: monospace, sans-serif;
             margin: 0;
             padding: 40px;
-            background-image: 
+
+            background-image:
                 linear-gradient(var(--grid-color) 1px, transparent 1px),
                 linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+
             background-size: 20px 20px;
         }
 
         main {
             max-width: 800px;
             margin: 0 auto;
-            border: 2px solid var(--line-color);
             padding: 40px;
+            border: 2px solid var(--line-color);
             background: rgba(11, 25, 44, 0.9);
-            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        h1, h2 {
+            color: var(--accent-color);
         }
 
         h1 {
             font-size: 2.5rem;
             margin-bottom: 20px;
-            color: var(--accent-color);
         }
 
-         h2 {
-            color: var(--accent-color);
+        h2 {
             font-size: 1.3rem;
             margin-top: 30px;
             border-bottom: 1px dashed var(--line-color);
             padding-bottom: 5px;
         }
 
-        p {
+        p, ul {
             color: #9bb0c1;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-        ul {
-            color: #9bb0c1;
-            line-height: 1.8;
-            margin-bottom: 20px;
-            padding-left: 20px;
+            line-height: 1.7;
         }
 
         li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
 
-         .nav-link {
+        .nav-link {
             display: inline-block;
             margin-bottom: 20px;
             color: var(--accent-color);
@@ -73,17 +71,17 @@
             border-bottom: 1px dashed var(--accent-color);
         }
 
-          .image-container {
+        .image-container {
             width: 100%;
             margin: 25px 0;
-            border: 1px dashed var(--line-color);
             padding: 10px;
-            box-sizing: border-box;
+            border: 1px dashed var(--line-color);
             background: rgba(0, 0, 0, 0.2);
+            box-sizing: border-box;
             text-align: center;
         }
 
-         .image-container img {
+        .image-container img {
             max-width: 100%;
             height: auto;
             display: block;
@@ -100,43 +98,73 @@
             background: #08101d;
         }
 
-          .title-block div {
+        .title-block div {
             padding: 10px;
-            border-right: 1px solid var(--line-color);
-            border-top: 1px solid var(--line-color);
+            border: 1px solid var(--line-color);
         }
     </style>
 </head>
+
 <body>
 
-     <main>
-        <a href="index.html" class="nav-link">&lt; Back to Index</a>
-        <p>Sheet 5: Firmware / Project Detail</p>
-        <h1>Arduino Vocabulary Game</h1>
+<main>
 
-        <p>An interactive hardware-based English learning game engineered to make vocabulary practice engaging. Powered by an Arduino Nano, the device challenges players to categorize words through physical inputs while providing real-time audio-visual feedback.</p>
+    <a href="index.html" class="nav-link">
+        &lt; Back to Index
+    </a>
 
-         <h2>How It Works & Hardware</h2>
-        <ul>
-            <li><b>Microcontroller Core:</b> Controlled by an Arduino Nano that processes user inputs and manages game logic.</li>
-            <li><b>Visual Interface:</b> An OLED screen displays English words from selected categories.</li>
-            <li><b>User Input:</b> Players use a toggle switch to navigate and dedicated tactile buttons to categorize words.</li>
-            <li><b>Active Feedback:</b> Correct and incorrect answers trigger specific LEDs. A buzzer provides audible alerts for immediate reinforcement.</li>
-              </ul>
+    <p>Project Detail</p>
 
-        <h2>Device Interface</h2>
-        <p>Below is the assembled interface showing the OLED screen integration and hardware input layout:</p>
+    <h1>Arduino Vocabulary Game</h1>
 
-         <div class="image-container">
-            <img src="images/Vocab_Game.jpeg" alt="Vocabulary Game Interface and Hardware Layout">
-        </div>
+    <p>
+        This is an interactive English learning game powered by Arduino. It helps users learn the positive and negative meanings of English words correctly through gameplay.
+    </p>
 
-        <div class="title-block">
-            <div><b>Title</b> Project: Arduino Vocabulary Game</div>
-            <div><b>Drawn by</b> _Ömer</div>
-            <div><b>Rev</b> A / 2026</div>
-        </div>
-    </main>
+    <h2>Hardware Components</h2>
+
+    <ul>
+        <li>Arduino Nano microcontroller acting as the core brain of the system.</li>
+        <li>OLED screen to display English words and game score feedback.</li>
+        <li>Dual pushbuttons and a key switch for user input and selecting answers.</li>
+        <li>Dual LEDs providing visual feedback for correct or incorrect answers.</li>
+        <li>Audible buzzer providing sound alerts during gameplay.</li>
+    </ul>
+
+    <h2>How the Game Works</h2>
+
+    <p>
+        The player uses the pushbuttons and key switch to answer whether the displayed English word has a positive or negative meaning.
+    </p>
+
+    <h2>Game Feedback</h2>
+
+    <p>
+       When the player gives a correct answer, the green LED lights up and a success tone plays; for an incorrect answer, the red LED triggers along with a buzzer alert.
+    </p>
+
+    <h2>Device Interface</h2>
+
+    <p>
+        All electronic components are compactly assembled and housed in a custom enclosure designed for easy handheld or desktop use.
+    </p>
+
+    <div class="image-container">
+
+        <img
+            src="images/Vocab_Game.jpeg"
+            alt="Arduino Vocabulary Game"
+        >
+
+    </div>
+
+    <div class="title-block">
+        <div><b>Project</b> Arduino Vocabulary Game</div>
+        <div><b>Author</b> Ömer</div>
+        <div><b>Revision</b> A / 2026</div>
+    </div>
+
+</main>
 
 </body>
 </html>
